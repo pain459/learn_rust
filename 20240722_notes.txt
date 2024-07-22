@@ -6,3 +6,5 @@ $ cargo init
 note: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 $ cargo init --lib  # this will initialize a library project
+
+Extensions codelldb (debugging), toml (toml parser)
