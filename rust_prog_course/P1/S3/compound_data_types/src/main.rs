@@ -15,4 +15,13 @@ fn main() {
 
     println!("fixed length string is {fixed_string}");
     println!("variable length string is {variable_string}");
+
+    // Arrays
+    let mut _array_1 = [4, 5, 6, 7, 8, 9];
+    let _num = _array_1[3];
+    let _array_2 = [0; 10];
+
+    println!("{:?}", _num);
+    println!("{:?}", _array_2);
+
 }
