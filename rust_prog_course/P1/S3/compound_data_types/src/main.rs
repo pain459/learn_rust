@@ -26,7 +26,18 @@ fn main() {
     println!("{:?}", _array_3);
 
     // Vectors
-    let vec_1: Vec<i32> = vec![4, 5, 6, 7, 8, 9];
+    let vec_1 :Vec<i32> = vec![4, 5, 6, 7, 8, 9];
     let num = vec_1[3];
     println!("{:?}", num);
+
+    // Tuples
+    let my_tuple = ("Salary", 40000, "Age", 30);
+    let my_salary = my_tuple.1;
+    println!("{:?}", my_salary);
+
+    let(salary, salary_value, age, age_value) = my_tuple;
+
+    let unit: () = ();
+
+
 }
