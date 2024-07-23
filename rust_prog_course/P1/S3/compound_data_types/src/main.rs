@@ -23,6 +23,5 @@ fn main() {
     let _array_3 = [1; 10];
 
     println!("{:?}", _num);
-    println!("{:?}", _array_2);
     println!("{:?}", _array_3);
 }
