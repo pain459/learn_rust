@@ -24,4 +24,9 @@ fn main() {
 
     println!("{:?}", _num);
     println!("{:?}", _array_3);
+
+    // Vectors
+    let vec_1: Vec<i32> = vec![4, 5, 6, 7, 8, 9];
+    let num = vec_1[3];
+    println!("{:?}", num);
 }
