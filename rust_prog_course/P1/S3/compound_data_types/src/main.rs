@@ -20,8 +20,9 @@ fn main() {
     let mut _array_1 = [4, 5, 6, 7, 8, 9];
     let _num = _array_1[3];
     let _array_2 = [0; 10];
+    let _array_3 = [1; 10];
 
     println!("{:?}", _num);
     println!("{:?}", _array_2);
-
+    println!("{:?}", _array_3);
 }
