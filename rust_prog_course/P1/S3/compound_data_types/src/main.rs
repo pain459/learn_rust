@@ -40,4 +40,7 @@ fn main() {
     let unit: () = ();
 
 
+    let x: u8;
+    x = 1;
+    println!("x is {}", x);
 }
