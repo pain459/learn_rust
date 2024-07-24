@@ -43,4 +43,8 @@ fn main() {
     let x: u8;
     x = 1;
     println!("x is {}", x);
+
+    let pi: f32;
+    pi = 3.14159;
+    println!("Value of pi is {}", pi);
 }
