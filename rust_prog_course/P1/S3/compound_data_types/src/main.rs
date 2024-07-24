@@ -52,4 +52,26 @@ fn main() {
     let b: i16 = 170;
     let name: &str = "Michael";
     println!("name is {}, and the multiplication result is {}", name, a*b);
+
+     type Book = (String, String, u32);
+
+    let book1:Book = (
+        String::from("Rust Programming Language"),
+        String::from("Rust Community"),
+        2010,
+    );
+    println!(
+        "Book Name: {}, Author: {}, year: {}",
+        book1.0, book1.1, book1.2
+    );
+
+    let book2:Book = (
+        String::from("Programming in Python"),
+        String::from("Mark Lutz"),
+        2012,
+    );
+    println!(
+        "Book Name: {}, Author: {}, year: {}",
+        book2.0, book2.1, book2.2
+    );
 }
