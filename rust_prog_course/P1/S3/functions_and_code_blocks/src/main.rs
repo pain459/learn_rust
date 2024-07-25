@@ -3,6 +3,8 @@
 // 			- Code Blocks
 // -------------------------------------------------
 
+mod practice_1;
+
 use std::fmt::Debug;
 
 fn main() {
