@@ -27,4 +27,15 @@ fn main() {
     };
 
     println!("For marks {marks}, grade is {grade}");
+
+    // conditional chaining using pattern match
+    let marks = 75;
+    let grade = match marks {
+        90..=100 => 'A',
+        80..=89 => 'B',
+        70..=79 => 'C',
+        _ => 'F'
+    };
+
+    println!("For marks {marks}, grade is {grade}");
 }
