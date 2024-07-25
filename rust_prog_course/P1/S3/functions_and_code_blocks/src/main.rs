@@ -4,6 +4,7 @@
 // -------------------------------------------------
 
 mod practice_1;
+mod practice_2;
 
 use std::fmt::Debug;
 
