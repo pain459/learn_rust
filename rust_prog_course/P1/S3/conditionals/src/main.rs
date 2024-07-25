@@ -13,4 +13,18 @@ fn main() {
     } else {
         println!("The number is less than 50");
     }
+
+    // if else ladder
+    let marks = 95;
+    let grade = if marks >= 90 {
+        'A'
+    } else if marks >= 80 {
+        'B'
+    } else if marks >= 70 {
+        'C'
+    } else {
+        'D'
+    };
+
+    println!("For marks {marks}, grade is {grade}");
 }
