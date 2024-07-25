@@ -1,5 +1,3 @@
-mod sum_of_squares;
-
 use std::time::Instant;
 
 fn sum_of_squares(n: u64) -> u128 {
@@ -11,7 +9,7 @@ fn sum_of_squares(n: u64) -> u128 {
 }
 
 fn main() {
-    let n: u64 = 10_000_000_0;
+    let n: u64 = 10_000_000;
     let start_time = Instant::now();
     let result = sum_of_squares(n);
     let end_time = Instant::now();
