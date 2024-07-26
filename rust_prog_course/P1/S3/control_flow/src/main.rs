@@ -22,4 +22,11 @@ fn main() {
     for i in vec {
         println!("{i}");
     }
+
+    // Using while loop
+    let mut num = 10;
+    while num < 10 {
+        num = num + 1;
+        println!("num is now {num}");
+    }
 }
