@@ -19,4 +19,8 @@ fn main() {
     let n :i32 = n.trim().parse().expect("invalid input");
 
     println!("Entered number is {n}");
+
+    for i in 1..=n {
+        println!("{i}");
+    }
 }
