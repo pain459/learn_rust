@@ -4,7 +4,8 @@
 // 			- while loops
 // ------------------------------------------
 
-mod pracice_1;
+mod practice_1;
+mod practice_2;
 
 fn main() {
     println!("Hello, world!");
