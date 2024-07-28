@@ -7,7 +7,6 @@ For example, if the user enters the number 5, you should compute the square of t
 Next, compute the sum of the squares as (1^2 + 2^2 + 3^2 + 4^2 + 5^2) = (1 + 4 + 9 + 16 + 25) = 55.
 Finally, calculate the difference as 225 - 55 = 170.
 */
-use std::collections::binary_heap::Iter;
 
 fn main() {
     let mut n = String::new();
@@ -23,6 +22,12 @@ fn main() {
     // println!("after iterations {square_of_sum}");
     let result_square_of_sum = i32::pow(square_of_sum, 2);
     println!("Result for square of the sum is {result_square_of_sum}");
+
+    // Sum of squares
+    for j in 1..=n {
+        sum_of_squares = sum_of_squares + i32::pow(j, 2);
+    }
+    println!("Result of sum of squares is {sum_of_squares}");
 
     println!("Test program!")
 }
