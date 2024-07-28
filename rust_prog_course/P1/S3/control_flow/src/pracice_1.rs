@@ -16,9 +16,13 @@ fn main() {
     let mut square_of_sum = 0;
     let mut sum_of_squares = 0;
 
+    // Square of the sum
     for i in 1..=n {
-        println!("{i}");
+        square_of_sum = square_of_sum + i
     }
+    // println!("after iterations {square_of_sum}");
+    let result_square_of_sum = i32::pow(square_of_sum, 2);
+    println!("Result for square of the sum is {result_square_of_sum}");
 
     println!("Test program!")
 }
