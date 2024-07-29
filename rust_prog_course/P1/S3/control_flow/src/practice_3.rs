@@ -33,7 +33,14 @@ fn total_production(hours: u16, speed: u16) -> f32 {
     // assembly line 0 is off with max speed 10
     // 2 hours, 4 speed = 2 * 4 * 221
     // total_produced_cars logic
-    let result = (hours * speed * 221) as f32;
+    let success_rate: f32 = match speed {
+        1..=4 => 1f32,
+        5..=8 => 0.9f32,
+        9..=10 => 0.77f32,
+        _ => 0f32,
+    };
+
+    let result = (hours * speed * 221 ) as f32 * success_rate;
     result
 }
 
