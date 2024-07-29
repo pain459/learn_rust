@@ -24,3 +24,14 @@ fn main() {
         println!("{i}");
     }
 }
+
+fn multiple_by_2_or_3(n :i32) -> i32 {
+    let result = if n%3=0 {
+        0
+    } else if n%5=0 {
+        0
+    } else {
+        -1
+    };
+    result
+}
