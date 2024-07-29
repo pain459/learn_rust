@@ -6,6 +6,7 @@
 
 mod practice_1;
 mod practice_2;
+mod practice_3;
 
 fn main() {
     println!("Hello, world!");
