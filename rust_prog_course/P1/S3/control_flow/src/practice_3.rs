@@ -24,6 +24,7 @@ Write the code for both functions based on the provided specifications.
 fn main() {
     println!("Main program to display results.");
     println!("{}", total_production(6, 5) as f32);
+    println!("{}", cars_produced_per_minutes(6, 5) as f32);
 
 }
 
@@ -45,6 +46,7 @@ fn total_production(hours: u16, speed: u16) -> f32 {
 }
 
 fn cars_produced_per_minutes(hours: u8, speed: u8) -> f32 {
-    let success_rate: f32;
-    -1.0
+    // let success_rate: f32;
+    total_production(hours as u16, speed as u16) / 60f32
+    // -1.0
 }
