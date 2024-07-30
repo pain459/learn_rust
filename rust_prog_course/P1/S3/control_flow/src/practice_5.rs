@@ -39,9 +39,13 @@ fn main() {
     let c = read_integer("Please enter integer for variable c: ");
 
     println!("Entered variables are a = {a}, b = {b}, c = {c}");
+    println!("{:?}", is_valid_triplet(a, b, c));
 }
 
 fn is_valid_triplet(a: i32, b: i32, c: i32) -> bool {
+    if a < b && b < c {
+        return true
+    }
     false
 }
 
