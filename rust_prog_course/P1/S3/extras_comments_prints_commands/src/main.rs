@@ -27,4 +27,13 @@ fn main() {
     println!("\t A tab at the start.");
     println!("This will be overwritten \r Instead this will be printed.");
     println!("This prints quotes \" and this prints slash \\");
+
+    println!(
+        "I'm doing {2} from last {1} years and I {0} it!",
+        "like", 20, "programming"
+    );
+    println!(
+        "{language} is a system programming language which is cool to {activity} in.",
+        language = "Rust", activity = "code"
+    )
 }
