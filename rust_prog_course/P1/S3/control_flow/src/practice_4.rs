@@ -9,12 +9,18 @@ The function should take a string as input and return a boolean value indicating
 */
 
 fn main() {
-    let _input = String::from("1221");
+    let _input = String::from("malayalam");
     println!("Checking if {_input} is a palindrome!");
     println!("It is {:?} that the given string is a palindrome.",
     palindrome(_input));
 }
 
 fn palindrome(_input: String) -> bool {
-    false
+    let mut chars = _input.chars();
+    while let (Some(c1), Some(c2)) = (chars.next(), chars.next_back()) {
+        if c1 != c2 {
+            return false;
+        }
+    }
+    true
 }
