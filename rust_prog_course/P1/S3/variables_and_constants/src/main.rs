@@ -7,6 +7,8 @@
 // 			 - Constants
 // -------------------------------------------------
 
+mod test;
+
 fn main() {
     // Definition
     let i = 10;
