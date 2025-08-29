@@ -85,3 +85,11 @@ ravik@pop1:~/src_git/learn_rust/s1/my_project$ tree
         └── my_project.d
 
 14 directories, 22 files
+
+-----
+
+Just executing without the project and everything.
+
+ravik@pop1:~/src_git/learn_rust/s1$ rustc example1.rs 
+ravik@pop1:~/src_git/learn_rust/s1$ ./example1 
+Hello world!
