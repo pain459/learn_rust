@@ -1,6 +1,0 @@
-[package]
-name = "extras_comments_prints_commands"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
