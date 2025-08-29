@@ -10,3 +10,78 @@ info: checking for self-update
 
 info: cleaning up downloads & tmp directories
 ravik@pop1:~/src_git/learn_rust$ 
+
+---------
+
+How to create run and release the build in rust
+
+1. Create a project using cargo.
+ravik@pop1:~/src_git/learn_rust/s1$ cargo new my_project
+    Creating binary (application) `my_project` package
+note: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+Technically creating the new layout template.
+
+ravik@pop1:~/src_git/learn_rust/s1/my_project$ cargo run
+   Compiling my_project v0.1.0 (/home/ravik/src_git/learn_rust/s1/my_project)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+     Running `target/debug/my_project`
+Hello, world!
+
+2. Build and run seperately
+
+ravik@pop1:~/src_git/learn_rust/s1/my_project$ cargo build
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.00s
+ravik@pop1:~/src_git/learn_rust/s1/my_project$ ./target/debug/my_project 
+Hello, world!
+
+now release the optimized build
+
+ravik@pop1:~/src_git/learn_rust/s1/my_project$ cargo build --release
+   Compiling my_project v0.1.0 (/home/ravik/src_git/learn_rust/s1/my_project)
+    Finished `release` profile [optimized] target(s) in 0.07s
+ravik@pop1:~/src_git/learn_rust/s1/my_project$ ./target/release/my_project 
+Hello, world!
+
+typical layout.
+
+ravik@pop1:~/src_git/learn_rust/s1/my_project$ tree
+.
+├── Cargo.lock
+├── Cargo.toml
+├── src
+│   └── main.rs
+└── target
+    ├── CACHEDIR.TAG
+    ├── debug
+    │   ├── build
+    │   ├── deps
+    │   │   ├── my_project-7832aa3364d81971
+    │   │   └── my_project-7832aa3364d81971.d
+    │   ├── examples
+    │   ├── incremental
+    │   │   └── my_project-2w0t8tjgzh0tc
+    │   │       ├── s-ham9w5wl91-18qub2d-2na32y1iii4jg1lkj7rqipvy0
+    │   │       │   ├── 1ceu4dh7ttzh7imfi1ehrn6bz.o
+    │   │       │   ├── 242gophj6qa5otk8s6bv9skyc.o
+    │   │       │   ├── 2obgyctf6mecwx5fsc8udqca2.o
+    │   │       │   ├── 2r0s3f4wo6qjyqo6efkpqjrhx.o
+    │   │       │   ├── 8kvvue7wouddx9eupj06xnq0t.o
+    │   │       │   ├── advhkwckwki7gz1s2kjnxbtbd.o
+    │   │       │   ├── dep-graph.bin
+    │   │       │   ├── query-cache.bin
+    │   │       │   └── work-products.bin
+    │   │       └── s-ham9w5wl91-18qub2d.lock
+    │   ├── my_project
+    │   └── my_project.d
+    └── release
+        ├── build
+        ├── deps
+        │   ├── my_project-d90c1c25eb2928a9
+        │   └── my_project-d90c1c25eb2928a9.d
+        ├── examples
+        ├── incremental
+        ├── my_project
+        └── my_project.d
+
+14 directories, 22 files
