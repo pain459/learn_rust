@@ -1,0 +1,17 @@
+Fundamentals:
+
+Learn Rust in a Month of Lunches
+Zero to Production In Rust: An introduction to backend development in Rust
+Rust Standard Library Cookbook
+Code Like a Pro in Rust
+Beginning Rust: From Novice to Professional
+Command-Line Rust: A Project-Based Primer for Writing Rust CLIs
+
+Additional Rust Reading:
+
+Ultimate Rust for Systems Programming
+The Rust Programming Language
+Practical Systems Programming with Rust
+Rust Atomics and Locks: Low-Level Concurrency in Practice
+Zero To Production In Rust: An introduction to backend development
+Programming Rust: Fast, Safe Systems Development
